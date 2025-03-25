@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('order_id')->constrained('orders')->onDelete('cascade');
             $table->foreignId('employee_id')->constrained('users');
-            $table->timestamp('checkout_time');
+            $table->timestamp('checkout_date');
             $table->timestamps();
         });
     }
